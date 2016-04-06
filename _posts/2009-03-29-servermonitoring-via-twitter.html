@@ -1,0 +1,20 @@
+---
+layout: post
+title: Servermonitoring via Twitter
+---
+
+<p>
+Da neulich mal wieder der Varnish-Cache abgerotzt ist und es dadurch wieder eine unerwartete Server-Downtime gab, dachte ich mir es wäre doch mal ganz nett über so etwas benachrichtigt zu werden. Und zwar am besten über mein Liebling-"Protokoll" Twitter.
+</p><p>
+Erst vor kurzem lief mir <a href="http://www.rubyinside.com/twibot-a-ruby-microframework-for-building-twitter-bots-1643.html">folgender Artikel</a> zu <a href="http://www.cjohansen.no/en/ruby/twibot_a_microframework_for_twitter_bots_in_ruby">Twibot</a>, einem Ruby-Framework für die Twitter-API über den Weg. Also gesagt - getan, folgendes Script habe ich mir mal zusammen gehackt.
+</p>
+
+<script src="http://gist.github.com/239769.js?file=gistfile1.rb"></script>
+
+<p>
+Das ist bestimmt nicht schön programmiert, aber es funktioniert. Konfiguriert wird es über die Datei ./config/bot.yml, aber am besten ist, ihr checkt es euch einfach auf Github aus: <a href="http://github.com/Santino/monbot/tree/master">http://github.com/Santino/monbot/tree/master</a>
+</p><p>
+Man kann den Bot einfach in einem bestimmten Intervall per Cron aufrufen und fertig ist die Karre.
+</p><p>
+Hiermit ist jeder herzlich eigeladen das Teil zu pimpen und noch andere Monitoring-Fälle einzubauen.
+</p>

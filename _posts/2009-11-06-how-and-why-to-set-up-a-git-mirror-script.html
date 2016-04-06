@@ -1,0 +1,22 @@
+---
+layout: post
+title: 'How and why to set up a git mirror script '
+---
+
+<p>Today I had some issues with GitHub and the university's network. We run a Hudson continuous integration server behind a HTTP proxy that has to fetch revisions from a github repository.</p>
+
+<p>But the problem was that the GitHub HTTP cloning is kind of broken at the moment. So I set up a little mirror script on my root server to mirror the GitHub repo to Gitorious.</p>
+
+<h2>Idea:</h2>
+
+<tt>local --git push--> GitHub --git pull--> rootserver --git push--> Gitorious --git pull: HTTP--> Hudson</tt>
+
+<h2>Solution:</h2>
+
+<script src="http://gist.github.com/228202.js"></script>
+
+<p>Now the Hudson server can fetch from the Gitorious repo that is always in sync.</p>
+
+<p>I know I could host all the stuff on my own server but I was to lazy to look up and setup all this server stuff. This solution took me about 10 minutes.</p>
+
+<p>My conclusion: distributed version control is the shit!</p>

@@ -1,0 +1,57 @@
+---
+layout: post
+title: 'New Playground: Ruby 1.9.1 running Nginx and passenger'
+---
+
+<p>
+Last week I got some time to try out Phusion's new Nginx-module. So I decided to try out it's Ruby 1.9 compatibilty, to test my own projects wether they are Ruby 1.9.1 compliant or not.
+</p>
+
+<p>
+I installed it on a fresh Ubuntu 9.04 RC1 Image into my virtual Box, and everything seems to work good yet.
+</p>
+<p>
+So here is my Install log:
+</p>
+
+<h2>Installing Ruby 1.9.1</h2>
+<p>
+based on: <a href="http://www.rubyhead.com/2009/01/14/installing-ruby-191-from-source-on-ubuntu-screencast/">http://www.rubyhead.com/2009/01/14/installing-ruby-191-from-source-on-ubuntu-screencast/</a>
+</p>
+
+<script src="http://gist.github.com/239766.js?file=gistfile1.txt"></script>
+<p>
+Download from it from here: <a href="http://www.ruby-lang.org/en/news/2009/01/30/ruby-1-9-1-released/">ttp://www.ruby-lang.org/en/news/2009/01/30/ruby-1-9-1-released/</a>
+</p>
+
+<script src="http://gist.github.com/239766.js?file=gistfile2.txt"></script>
+
+<h2>Installing Rails & Setting up a Sample App</h2>
+
+<script src="http://gist.github.com/239766.js?file=gistfile3.txt"></script>
+
+<h2>Installing Nginx & Passenger</h2>
+<p>
+based on: <a href="http://blog.phusion.nl/2009/04/16/phusions-one-year-anniversary-gift-phusion-passenger-220/"> http://blog.phusion.nl/2009/04/16/phusions-one-year-anniversary-gift-phusion-passenger-220</a>
+</p>
+
+<script src="http://gist.github.com/239766.js?file=gistfile4.txt"></script>
+
+Then choose option 1: "Yes, download, compile and install Nginx for me. (recommended)"
+
+<script src="http://gist.github.com/239766.js?file=gistfile5.txt"></script>
+<p>
+and insert:
+</p>
+
+<script src="http://gist.github.com/239766.js?file=gistfile6.txt"></script>
+
+<script src="http://gist.github.com/239766.js?file=gistfile7.txt"></script>
+
+<p>
+Et voilá, open your browser and and see an new Rails App. Opening the environment page you can see that everything is running under Ruby 1.9.1.
+</p>
+
+<p>
+I hope you enjoyed this how-to. Please feel encouraged to give me some feedback via twitter or e-mail.
+</p>
