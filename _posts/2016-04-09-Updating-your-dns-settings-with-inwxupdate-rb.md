@@ -31,11 +31,27 @@ CONFIG = {
   jobs: [
     {
       records: [
-        { name: 'www.example.org', type: 'AAAA' }
+        { name: 'www.example.org', type: 'AAAA' },
+        { name: 'v6.example.org', type: 'AAAA' }
       ],
-      network_interface: 'en0'
-    }
+      detector: {
+        type: 'ifconfig',
+        version: 6,
+        network_interface: 'en0'
+      }
+    },
+    {
+      records: [
+        { name: 'v4.example.org', type: 'A' }
+      ],
+      detector: {
+        type: 'ipify',
+        version: 4,
+        network_interface: 'en0'
+      }
   ],
   debug: false
 }
 ```
+
+*Update:* You can now use different _Detectors_ for obtaining your IP address. See example config.
