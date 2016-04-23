@@ -36,7 +36,7 @@ CONFIG = {
       ],
       detector: {
         type: 'ifconfig',
-        version: 6,
+        version: 6, # detect IPv6 address
         network_interface: 'en0'
       }
     },
@@ -46,7 +46,7 @@ CONFIG = {
       ],
       detector: {
         type: 'ipify',
-        version: 4,
+        version: 4, # detect IPv4 address (ipify does not support IPv6)
         network_interface: 'en0'
       }
   ],
