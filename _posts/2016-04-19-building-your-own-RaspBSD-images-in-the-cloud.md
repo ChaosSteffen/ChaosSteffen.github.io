@@ -10,7 +10,7 @@ So at some point I wanted to build my own SD card image, but compiling on your l
 The following guide was created using a virtual FreeBSD instance from DigitalOcean, but should also work on any other service like EC2 or on your local FreeBSD machine.
 
 ### 1. Create a new FreeBSD instance and login
-Go to [https://www.digitalocean.com](www.digitalocean.com/?refcode=39f0d520c166) (referal link, feel free to not use it) and sign up.
+Go to [https://www.digitalocean.com](https://www.digitalocean.com/?refcode=39f0d520c166) (referal link, feel free to not use it) and sign up.
 
 Create a new instance (they call it "droplet") and choose FreeBSD 10.2. The size just depends on how long you are willing to wait. Note: you can resize your instance late to use more cores and ram.
 
