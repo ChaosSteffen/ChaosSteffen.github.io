@@ -14,16 +14,13 @@ Feel free to use and fork [inwxupdate](https://github.com/ChaosSteffen/inwxupdat
 This is how you use it:
 
 ```
-git clone https://github.com/ChaosSteffen/inwxupdate.git
-cd inwxupdate
-cp config.rb.example config.rb
-vi config.rb
-ruby inwxupdate.rb
+gem install inwxupdate
 ```
 
 You can update multiple DNS records at a time and get IPs from different network interfaces.
 
 ```
+# inwxupdate.config.rb
 CONFIG = {
   inwx_api: 'api.domrobot.com',
   inwx_user: 'your_username',
@@ -52,6 +49,12 @@ CONFIG = {
   ],
   debug: false
 }
+```
+
+Then run:
+
+```
+inwxupdate
 ```
 
 *Update:* You can now use different _Detectors_ for obtaining your IP address. See example config.
